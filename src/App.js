@@ -1,19 +1,22 @@
 import './App.css';
 import ParticlesBg from 'particles-bg'
-import Tilt from 'react-parallax-tilt';
+import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+import Navigation from './components/Naviation/Navigation';
+import Logo from './components/Logo/Logo'; 
+import Rank from './components/Rank/Rank';
 
 function App() {
   return (
     <div className="App">
+      <ParticlesBg type="cobweb" bg={true} />
       <Navigation />
-      {/* <Logo />
+      <Logo />
+      <Rank /> 
       <ImageLinkForm />
-      <ParticlesBg type="ball" bg={true} />
-      <Tilt>
-        <div style={{ height: '300px', backgroundColor: 'darkgreen' }}>
-          <h1>React Parallax Tilt 👀</h1>
-        </div>
-      </Tilt> */}
+    
+      {/* 
+      <FaceRecognition />
+      */}
     </div>
   );
 }
